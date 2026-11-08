@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "customalchemy",
+	"version": "${version}",
+	"name": "CustomAlchemy",
+	"description": "Mod that allow to brew potions another way, except of brew stand",
+	"authors": [
+		"CMep4"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/customalchemy/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.cmep4.customalchemy.CustomAlchemy"
+		],
+		"fabric-datagen": [
+			"net.cmep4.customalchemy.CustomAlchemyDataGenerator"
+		],
+		"client": [
+			"net.cmep4.customalchemy.CustomAlchemyClient"
+		]
+	},
+	"mixins": [
+		"customalchemy.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
