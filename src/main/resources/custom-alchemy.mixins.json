@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "net.cmep4.customalchemy.mixin",
+	"package": "net.cmep4.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"
