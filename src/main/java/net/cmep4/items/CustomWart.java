@@ -19,10 +19,9 @@ public class CustomWart extends Item {
         properties.food(new FoodProperties.Builder()
                 .nutrition(2)
                 .effect(new MobEffectInstance(MobEffects.CONFUSION), 0.5f)
-                .fast()
                 .build()
         );
-        properties.stacksTo(64);
+        properties.stacksTo(32);
     }
 
     @Override

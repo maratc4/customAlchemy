@@ -1,6 +1,6 @@
 {
-  "item.customalchemy.custom_wart": "Дрожжи",
-  "item.customalchemy.molasses": "Черная патока",
+  "item.custom-alchemy.custom_wart": "Дрожжи",
+  "item.custom-alchemy.molasses": "Черная патока",
   "itemTooltip.custom-alchemy.custom_wart": "Просто новый кастомный ебучий.. ебучие дрожжи.",
   "itemTooltip.custom-alchemy.molasses": "ММММММ ГРИБОЧКЕ"
 }

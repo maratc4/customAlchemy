@@ -11,8 +11,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 
 public class ItemRegistry {
-    public static Item CUSTOM_WART = register(Items.NETHER_WART, CustomWart.id);
-    public static Item MOLASSES = register(Items.WHEAT_SEEDS, Molasses.id);
+    public static Item CUSTOM_WART = register(new Item(new Item.Properties()), CustomWart.id);
+    public static Item MOLASSES = register(new Item(new Item.Properties()), Molasses.id);
 
     public static void initialize() {
         CustomAlchemy.LOGGER.info("========== [Custom Alchemy] Init item registry ==========");
