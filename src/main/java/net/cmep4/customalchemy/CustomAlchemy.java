@@ -1,5 +1,6 @@
 package net.cmep4.customalchemy;
 
+import net.cmep4.customalchemy.items.ItemRegistry;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
@@ -13,9 +14,8 @@ public class CustomAlchemy implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("========== [Custom Alchemy] INIT ==========");
-
-
+		LOGGER.info("========== [Custom Alchemy] INIT MAIN CLASS ==========");
+		ItemRegistry.initialize();
 	}
 
 	public static Identifier id(String path) {
