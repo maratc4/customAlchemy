@@ -1,4 +1,4 @@
-# CustomAlchemy
+# Custom Alchemy
 
 ## Setup
 
