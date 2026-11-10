@@ -1,7 +1,10 @@
 package net.cmep4.items;
 
 import net.cmep4.CustomAlchemy;
+import net.cmep4.blocks.BlockRegistry;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
@@ -22,5 +25,13 @@ public class CustomAlchemyGroup {
 
     public static void initialize() {
         CustomAlchemy.LOGGER.info("========== [Custom Alchemy] Init custom alchemy group registry ==========");
+
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, CUSTOM_AlCHEMY_GROUP_KEY, CUSTOM_ALCHEMY_GROUP);
+
+        ItemGroupEvents.modifyEntriesEvent(CUSTOM_AlCHEMY_GROUP_KEY).register(itemGroup -> {
+            itemGroup.accept(ItemRegistry.CUSTOM_WART);
+            itemGroup.accept(ItemRegistry.MOLASSES);
+            itemGroup.accept(BlockRegistry.CUSTOM_CAULDRON);
+        });
     }
 }
