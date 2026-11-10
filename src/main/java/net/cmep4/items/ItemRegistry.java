@@ -8,7 +8,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 
 public class ItemRegistry {
     public static Item CUSTOM_WART = register(new Item(new Item.Properties()), CustomWart.id);
@@ -16,6 +15,12 @@ public class ItemRegistry {
 
     public static void initialize() {
         CustomAlchemy.LOGGER.info("========== [Custom Alchemy] Init item registry ==========");
+
+        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.INGREDIENTS)
+                .register(itemGroup -> {
+                    itemGroup.accept(ItemRegistry.CUSTOM_WART);
+                    itemGroup.accept(ItemRegistry.MOLASSES);
+                });
 
         setCustomWart();
         setMolasses();
@@ -26,13 +31,10 @@ public class ItemRegistry {
     }
 
     private static void setCustomWart() {
-        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.INGREDIENTS)
-                .register(itemGroup -> itemGroup.accept(ItemRegistry.CUSTOM_WART));
+        
     }
 
     private static void setMolasses() {
-        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.INGREDIENTS)
-                .register(itemGroup -> itemGroup.accept(ItemRegistry.MOLASSES));
         CompostingChanceRegistry.INSTANCE.add(ItemRegistry.MOLASSES, 0.5f);
     }
 }

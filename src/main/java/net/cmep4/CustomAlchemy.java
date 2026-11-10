@@ -1,5 +1,6 @@
 package net.cmep4;
 
+import net.cmep4.blocks.BlockRegistry;
 import net.cmep4.items.ItemRegistry;
 import net.fabricmc.api.ModInitializer;
 
@@ -16,6 +17,7 @@ public class CustomAlchemy implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("========== [Custom Alchemy] INIT MAIN CLASS ==========");
 		ItemRegistry.initialize();
+		BlockRegistry.initialize();
 	}
 
 	public static ResourceLocation id(String path) {
