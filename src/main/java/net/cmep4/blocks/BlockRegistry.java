@@ -11,7 +11,11 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class BlockRegistry {
-    public static Block CUSTOM_CAULDRON = register(new Block(BlockBehaviour.Properties.of().sound(SoundType.CALCITE)), "custom_cauldron", true);
+    public static Block CUSTOM_CAULDRON = register(
+            new Block(BlockBehaviour.Properties.of().sound(SoundType.CALCITE).strength(4f)),
+            "custom_cauldron",
+            true
+    );
 
     public static void initialize() {
         CustomAlchemy.LOGGER.info("========== [Custom Alchemy] Init block registry ==========");

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "custom-alchemy:block/custom_cauldron"
+    }
+  }
+}

@@ -1,6 +1,10 @@
 {
-  "item.custom-alchemy.custom_wart": "custom wart",
-  "item.custom-alchemy.molasses": "molasses",
+  "itemGroup.custom-alchemy": "Custom Alchemy",
+
+  "item.custom-alchemy.custom_wart": "Custom Wart",
+  "item.custom-alchemy.molasses": "Molasses",
   "itemTooltip.custom-alchemy.custom_wart": "New custom wart to.. idk, fuck yourself.",
-  "itemTooltip.custom-alchemy.molasses": "BBC recommends these mushrooms"
+  "itemTooltip.custom-alchemy.molasses": "BBC recommends these mushrooms",
+
+  "block.custom-alchemy.custom_cauldron": "Custom Cauldron"
 }

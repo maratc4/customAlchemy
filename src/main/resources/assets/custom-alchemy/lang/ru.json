@@ -1,6 +1,10 @@
 {
+  "itemGroup.custom-alchemy": "Кастомная Алхимия",
+
   "item.custom-alchemy.custom_wart": "Дрожжи",
   "item.custom-alchemy.molasses": "Черная патока",
   "itemTooltip.custom-alchemy.custom_wart": "Просто новый кастомный ебучий.. ебучие дрожжи.",
-  "itemTooltip.custom-alchemy.molasses": "ММММММ ГРИБОЧКЕ"
+  "itemTooltip.custom-alchemy.molasses": "ММММММ ГРИБОЧКЕ",
+
+  "block.custom-alchemy.custom_cauldron": "Кастомный котел"
 }
