@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "W": {
+      "item": "custom-alchemy:custom_wart"
+    }
+  },
+  "pattern": [
+    "I I",
+    "IWI",
+    "III"
+  ],
+  "result": {
+    "count": 1,
+    "id": "custom-alchemy:custom_cauldron"
+  }
+}

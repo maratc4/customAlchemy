@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "custom-alchemy:custom_wart"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "custom-alchemy:molasses"
+  }
+}

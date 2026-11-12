@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "ingredient": [
+    {
+      "item": "custom-alchemy:custom_wart_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "custom-alchemy:custom_wart"
+  }
+}
