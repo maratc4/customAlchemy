@@ -12,7 +12,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class BlockRegistry {
     public static Block CUSTOM_CAULDRON = register(
-            new Block(BlockBehaviour.Properties.of().sound(SoundType.CALCITE).strength(4f)),
+            new Block(BlockBehaviour.Properties.of().sound(SoundType.CALCITE).strength(4f).requiresCorrectToolForDrops()),
             "custom_cauldron",
             true
     );
