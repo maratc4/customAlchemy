@@ -1,7 +1,8 @@
-package net.cmep4.items;
+package net.cmep4.alchemy_items.items_group;
 
 import net.cmep4.CustomAlchemy;
-import net.cmep4.blocks.BlockRegistry;
+import net.cmep4.alchemy_blocks.BlockRegistry;
+import net.cmep4.alchemy_items.ItemRegistry;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.Registry;

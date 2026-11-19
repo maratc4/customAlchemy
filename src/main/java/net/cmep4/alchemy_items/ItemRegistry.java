@@ -1,6 +1,9 @@
-package net.cmep4.items;
+package net.cmep4.alchemy_items;
 
 import net.cmep4.CustomAlchemy;
+import net.cmep4.alchemy_blocks.BlockRegistry;
+import net.cmep4.alchemy_items.items.CustomWart;
+import net.cmep4.alchemy_items.items.Molasses;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.minecraft.core.Registry;
@@ -10,7 +13,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 
 public class ItemRegistry {
-    public static Item CUSTOM_WART = register(new Item(new Item.Properties()), CustomWart.id);
+    public static Item CUSTOM_WART = register(new CustomWart(BlockRegistry.CUSTOM_WART, new Item.Properties()), CustomWart.id);
     public static Item MOLASSES = register(new Item(new Item.Properties()), Molasses.id);
 
     public static void initialize() {

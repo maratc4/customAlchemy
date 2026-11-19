@@ -1,8 +1,8 @@
 package net.cmep4;
 
-import net.cmep4.blocks.BlockRegistry;
-import net.cmep4.items.CustomAlchemyGroup;
-import net.cmep4.items.ItemRegistry;
+import net.cmep4.alchemy_blocks.BlockRegistry;
+import net.cmep4.alchemy_items.items_group.CustomAlchemyGroup;
+import net.cmep4.alchemy_items.ItemRegistry;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.ResourceLocation;

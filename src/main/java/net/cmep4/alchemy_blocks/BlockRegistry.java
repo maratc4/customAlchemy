@@ -1,4 +1,4 @@
-package net.cmep4.blocks;
+package net.cmep4.alchemy_blocks;
 
 import net.cmep4.CustomAlchemy;
 import net.minecraft.core.Registry;
@@ -9,11 +9,18 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.PushReaction;
 
 public class BlockRegistry {
     public static Block CUSTOM_CAULDRON = register(
             new Block(BlockBehaviour.Properties.of().sound(SoundType.CALCITE).strength(4f).requiresCorrectToolForDrops()),
             "custom_cauldron",
+            true
+    );
+
+    public static Block CUSTOM_WART = register(
+            new Block(BlockBehaviour.Properties.of().noCollission().randomTicks().instabreak().sound(SoundType.NETHER_WART).pushReaction(PushReaction.DESTROY)),
+            "custom_wart",
             true
     );
 

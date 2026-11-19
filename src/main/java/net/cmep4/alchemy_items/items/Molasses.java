@@ -1,4 +1,4 @@
-package net.cmep4.items;
+package net.cmep4.alchemy_items.items;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
