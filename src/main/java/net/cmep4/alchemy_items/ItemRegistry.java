@@ -14,7 +14,7 @@ import net.minecraft.world.item.Item;
 
 public class ItemRegistry {
     public static Item CUSTOM_WART = register(new CustomWart(BlockRegistry.CUSTOM_WART, new Item.Properties()), CustomWart.id);
-    public static Item MOLASSES = register(new Item(new Item.Properties()), Molasses.id);
+    public static Item MOLASSES = register(new Molasses(BlockRegistry.MOLASSES, new Item.Properties()), Molasses.id);
 
     public static void initialize() {
         CustomAlchemy.LOGGER.info("========== [Custom Alchemy] Init item registry ==========");

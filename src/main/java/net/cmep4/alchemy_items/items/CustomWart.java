@@ -9,11 +9,16 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.PushReaction;
 
 import java.util.List;
 
 public class CustomWart extends BlockItem {
     public static final String id = "custom_wart";
+    public static final BlockBehaviour.Properties blockProperties = BlockBehaviour.Properties.of()
+            .noCollission().randomTicks().instabreak().sound(SoundType.NETHER_WART).pushReaction(PushReaction.DESTROY);
 
     public CustomWart(Block block, Properties properties) {
         super(block, properties);
@@ -22,7 +27,7 @@ public class CustomWart extends BlockItem {
                 .effect(new MobEffectInstance(MobEffects.CONFUSION), 0.5f)
                 .build()
         );
-        properties.stacksTo(32);
+        properties.stacksTo(64);
     }
 
     @Override
